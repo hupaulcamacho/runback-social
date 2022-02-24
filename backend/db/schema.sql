@@ -12,7 +12,7 @@ CREATE TABLE users (
 
 CREATE TABLE posts (
     id SERIAL PRIMARY KEY,
-    creator_id INT REFERENCES users (id)
+    creator_id INT REFERENCES users (id),
     body VARCHAR,
     hidden BOOLEAN
-)
+);
